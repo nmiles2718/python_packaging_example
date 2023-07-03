@@ -1,0 +1,4 @@
+.idea
+example_package/*pycache*/
+example_package/example_subpackage/__pycache__/
+example_package_name.egg-info/

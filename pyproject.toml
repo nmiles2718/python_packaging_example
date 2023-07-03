@@ -3,7 +3,10 @@ requires = ["setuptools>=61.0", "setuptools-git-versioning"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["example_package"]
+packages = [
+    "example_package",
+    "example_package.example_subpackage"
+]
 
 [tool.setuptools-git-versioning]
 enabled = true
@@ -11,13 +14,12 @@ template = "{tag}"
 dirty_template = "{tag}+git.{sha}+changes"
 dev_template = "{tag}+git.{sha}"
 
-
 [project]
 name = "example-package-name"
 authors = [
   { name="Nathan Miles", email="ndmiles1992@gmail.com" },
 ]
-description = "A small example package"
+description = "A small example of python packaging"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -26,7 +28,3 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dynamic = ["version"]
-
-#[tool.setuptools.dynamic]
-#version = {attr = "example_package.__version__"}
-

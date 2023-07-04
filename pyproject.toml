@@ -23,7 +23,7 @@ description = "A small example of python packaging"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "typer"
+    "typer[all]"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

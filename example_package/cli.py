@@ -20,8 +20,8 @@ def cli(
 ):
     """Entry point for the CLI
     
-    The point of this function is define the CL arguments and pass them to the
-    desired function. 
+    The point of this function is to define the CL arguments and pass them to
+    the desired endpoint. 
     
     Parameters
     ----------

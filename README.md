@@ -54,6 +54,11 @@ pip install git+https://github.com/nmiles2718/python_packaging_example.git
 ```shell
 pip install git+ssh://git@github.com/nmiles2718/python_packaging_example.git
 ```
+- In the installs using github links, you can specify a tag for the build. Here
+we specify tag 1.2.0 and we use ssh, instead of https. 
+````
+ pip install git+ssh://git@github.com/nmiles2718/python_packaging_example.git@1.2.0
+````
 
 Command Line Interface
 ----------------------
@@ -65,10 +70,16 @@ user@host % cli --help
  Usage: cli [OPTIONS]
 
  Entry point for the CLI
- The point of this function is define the CL arguments and pass them to the
- desired function.
- Parameters ---------- input1 : str     The first input for the CLI      input2
- : str     The second input for the CLI Returns -------
+ The point of this function is to define the CL arguments and pass them to the
+ desired endpoint.
+ Parameters 
+ ---------- 
+ input1 : str
+      The first input for the CLI      
+ input2 : str
+      The second input for the CLI 
+ Returns 
+ -------
 
 ╭─ Options ────────────────────────────────────────────────────────────────────╮
 │ *  --input1        INTEGER  Option help message [default: None] [required]   │
